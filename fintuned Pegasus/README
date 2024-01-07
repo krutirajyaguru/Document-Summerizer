@@ -1,0 +1,6 @@
+create venv with pytorch:
+
+conda create --name finalvenv pytorch
+
+pip install transformers[sentencepiece] datasets sacrebleu rouge_score py7zr -q
+

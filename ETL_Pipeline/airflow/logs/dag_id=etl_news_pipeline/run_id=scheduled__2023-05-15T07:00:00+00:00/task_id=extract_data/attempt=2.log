@@ -1,0 +1,13 @@
+[2023-05-15T09:15:42.821+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-15T07:00:00+00:00 [queued]>
+[2023-05-15T09:15:42.830+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-15T07:00:00+00:00 [queued]>
+[2023-05-15T09:15:42.830+0200] {taskinstance.py:1331} INFO - Starting attempt 2 of 2
+[2023-05-15T09:15:42.844+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-15 07:00:00+00:00
+[2023-05-15T09:15:42.923+0200] {standard_task_runner.py:57} INFO - Started process 1503 to run task
+[2023-05-15T09:15:42.931+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-15T07:00:00+00:00', '--job-id', '1700', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmp36i4it9y']
+[2023-05-15T09:15:42.935+0200] {standard_task_runner.py:85} INFO - Job 1700: Subtask extract_data
+[2023-05-15T09:15:43.308+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-15T07:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T09:15:43.935+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-15T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-15T07:00:00+00:00'
+[2023-05-15T09:15:43.937+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T09:15:43.938+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py extract_data']
+[2023-05-15T09:15:43.997+0200] {subprocess.py:86} INFO - Output:

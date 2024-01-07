@@ -1,0 +1,9 @@
+[2023-05-15T01:47:31.673+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T01:47:31.680+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T01:47:31.681+0200] {taskinstance.py:1331} INFO - Starting attempt 2 of 2
+[2023-05-15T01:47:31.690+0200] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): extract> on 2023-05-13 00:00:00+00:00
+[2023-05-15T01:47:31.952+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1449', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmplg8pna56']
+[2023-05-15T01:47:31.955+0200] {standard_task_runner.py:85} INFO - Job 1449: Subtask extract
+[2023-05-15T01:47:31.940+0200] {standard_task_runner.py:57} INFO - Started process 7856 to run task
+[2023-05-15T01:47:32.072+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T01:47:32.145+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'

@@ -1,0 +1,475 @@
+[2023-05-15T00:23:26.828+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T00:23:26.835+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T00:23:26.835+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T00:23:26.849+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T00:23:26.875+0200] {standard_task_runner.py:57} INFO - Started process 1681 to run task
+[2023-05-15T00:23:26.884+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1365', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmphjxq5xqp']
+[2023-05-15T00:23:26.887+0200] {standard_task_runner.py:85} INFO - Job 1365: Subtask extract_data
+[2023-05-15T00:23:26.941+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T00:23:27.004+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T00:23:27.005+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T00:23:27.006+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py']
+[2023-05-15T00:23:27.031+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T00:23:29.230+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-15T00:23:29.266+0200] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230514T222326, end_date=20230514T222329
+[2023-05-15T00:23:29.310+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-15T00:23:29.330+0200] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T00:29:25.649+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T00:29:25.657+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T00:29:25.658+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T00:29:25.671+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T00:29:25.715+0200] {standard_task_runner.py:57} INFO - Started process 2157 to run task
+[2023-05-15T00:29:25.725+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1383', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmp68r6gr9e']
+[2023-05-15T00:29:25.728+0200] {standard_task_runner.py:85} INFO - Job 1383: Subtask extract_data
+[2023-05-15T00:29:25.800+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T00:29:25.885+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T00:29:25.886+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T00:29:25.887+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py']
+[2023-05-15T00:29:25.916+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T00:29:28.190+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-15T00:29:28.231+0200] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230514T222925, end_date=20230514T222928
+[2023-05-15T00:29:28.277+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-15T00:29:28.306+0200] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T00:32:02.594+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T00:32:02.601+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T00:32:02.601+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T00:32:02.615+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T00:32:02.636+0200] {standard_task_runner.py:57} INFO - Started process 2374 to run task
+[2023-05-15T00:32:02.645+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1388', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmpnian0kdg']
+[2023-05-15T00:32:02.648+0200] {standard_task_runner.py:85} INFO - Job 1388: Subtask extract_data
+[2023-05-15T00:32:02.702+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T00:32:02.763+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T00:32:02.765+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T00:32:02.766+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py']
+[2023-05-15T00:32:02.790+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T00:32:05.027+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-15T00:32:05.068+0200] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230514T223202, end_date=20230514T223205
+[2023-05-15T00:32:05.113+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-15T00:32:05.137+0200] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T00:36:51.105+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T00:36:51.111+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T00:36:51.112+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T00:36:51.128+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T00:36:51.160+0200] {standard_task_runner.py:57} INFO - Started process 2680 to run task
+[2023-05-15T00:36:51.170+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1396', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmppgholyeu']
+[2023-05-15T00:36:51.172+0200] {standard_task_runner.py:85} INFO - Job 1396: Subtask extract_data
+[2023-05-15T00:36:51.229+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T00:36:51.285+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T00:36:51.286+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T00:36:51.287+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py']
+[2023-05-15T00:36:51.317+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T00:36:53.596+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-15T00:36:53.637+0200] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230514T223651, end_date=20230514T223653
+[2023-05-15T00:36:53.679+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-15T00:36:53.706+0200] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T00:43:15.046+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T00:43:15.052+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T00:43:15.053+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T00:43:15.061+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T00:43:15.088+0200] {standard_task_runner.py:57} INFO - Started process 3131 to run task
+[2023-05-15T00:43:15.099+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1411', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmp8id9xi4z']
+[2023-05-15T00:43:15.102+0200] {standard_task_runner.py:85} INFO - Job 1411: Subtask extract_data
+[2023-05-15T00:43:15.160+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T00:43:15.220+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T00:43:15.222+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T00:43:15.223+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py']
+[2023-05-15T00:43:15.246+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T00:43:17.500+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-15T00:43:17.530+0200] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230514T224315, end_date=20230514T224317
+[2023-05-15T00:43:17.564+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-15T00:43:17.585+0200] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T00:58:12.911+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T00:58:12.917+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T00:58:12.918+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T00:58:12.926+0200] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T00:58:12.950+0200] {standard_task_runner.py:57} INFO - Started process 3748 to run task
+[2023-05-15T00:58:12.959+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1417', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmpluqdpzx8']
+[2023-05-15T00:58:12.962+0200] {standard_task_runner.py:85} INFO - Job 1417: Subtask extract_data
+[2023-05-15T00:58:13.020+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T00:58:13.086+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T01:01:14.494+0200] {process_utils.py:131} INFO - Sending 15 to group 3748. PIDs of all processes in the group: [3748]
+[2023-05-15T01:01:14.503+0200] {process_utils.py:86} INFO - Sending the signal 15 to group 3748
+[2023-05-15T01:03:18.587+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T01:03:18.599+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T01:03:18.599+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T01:03:18.616+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T01:03:18.686+0200] {standard_task_runner.py:57} INFO - Started process 4115 to run task
+[2023-05-15T01:03:18.698+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1422', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmpxgxpciiw']
+[2023-05-15T01:03:18.705+0200] {standard_task_runner.py:85} INFO - Job 1422: Subtask extract_data
+[2023-05-15T01:03:18.792+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T01:03:18.890+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T01:03:18.892+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T01:03:18.893+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', <function extract_data at 0x1139f8860>]
+[2023-05-15T01:03:18.894+0200] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/niyantmehta/opt/anaconda3/envs/finalvenv/lib/python3.11/site-packages/airflow/operators/bash.py", line 201, in execute
+    result = self.subprocess_hook.run_command(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niyantmehta/opt/anaconda3/envs/finalvenv/lib/python3.11/site-packages/airflow/hooks/subprocess.py", line 77, in run_command
+    self.sub_process = Popen(
+                       ^^^^^^
+  File "/Users/niyantmehta/opt/anaconda3/envs/finalvenv/lib/python3.11/subprocess.py", line 1024, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Users/niyantmehta/opt/anaconda3/envs/finalvenv/lib/python3.11/subprocess.py", line 1850, in _execute_child
+    self.pid = _fork_exec(
+               ^^^^^^^^^^^
+TypeError: expected str, bytes or os.PathLike object, not function
+[2023-05-15T01:03:18.920+0200] {taskinstance.py:1368} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230514T230318, end_date=20230514T230318
+[2023-05-15T01:03:18.951+0200] {standard_task_runner.py:104} ERROR - Failed to execute job 1422 for task extract_data (expected str, bytes or os.PathLike object, not function; 4115)
+[2023-05-15T01:03:18.993+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 1
+[2023-05-15T01:03:19.020+0200] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T01:09:18.395+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T01:09:18.405+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T01:09:18.406+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T01:09:18.420+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T01:09:18.435+0200] {standard_task_runner.py:57} INFO - Started process 4425 to run task
+[2023-05-15T01:09:18.444+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1429', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmp7j3gnyfl']
+[2023-05-15T01:09:18.449+0200] {standard_task_runner.py:85} INFO - Job 1429: Subtask extract_data
+[2023-05-15T01:09:18.523+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T01:09:18.791+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T01:09:18.793+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T01:09:18.794+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py']
+[2023-05-15T01:09:18.811+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T01:11:50.288+0200] {local_task_job_runner.py:298} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2023-05-15T01:11:50.348+0200] {process_utils.py:131} INFO - Sending 15 to group 4425. PIDs of all processes in the group: [4450, 4425]
+[2023-05-15T01:11:50.357+0200] {process_utils.py:86} INFO - Sending the signal 15 to group 4425
+[2023-05-15T01:11:50.390+0200] {taskinstance.py:1540} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-05-15T01:11:50.515+0200] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2023-05-15T01:11:50.797+0200] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/niyantmehta/opt/anaconda3/envs/finalvenv/lib/python3.11/site-packages/airflow/operators/bash.py", line 201, in execute
+    result = self.subprocess_hook.run_command(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niyantmehta/opt/anaconda3/envs/finalvenv/lib/python3.11/site-packages/airflow/hooks/subprocess.py", line 91, in run_command
+    for raw_line in iter(self.sub_process.stdout.readline, b""):
+  File "/Users/niyantmehta/opt/anaconda3/envs/finalvenv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 1542, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2023-05-15T01:11:50.846+0200] {taskinstance.py:1368} INFO - Marking task as FAILED. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230514T230918, end_date=20230514T231150
+[2023-05-15T01:11:50.900+0200] {standard_task_runner.py:104} ERROR - Failed to execute job 1429 for task extract_data ((psycopg2.errors.ForeignKeyViolation) insert or update on table "task_fail" violates foreign key constraint "task_fail_ti_fkey"
+DETAIL:  Key (dag_id, task_id, run_id, map_index)=(etl_news_pipeline, extract_data, scheduled__2023-05-13T00:00:00+00:00, -1) is not present in table "task_instance".
+
+[SQL: INSERT INTO task_fail (task_id, dag_id, run_id, map_index, start_date, end_date, duration) VALUES (%(task_id)s, %(dag_id)s, %(run_id)s, %(map_index)s, %(start_date)s, %(end_date)s, %(duration)s) RETURNING task_fail.id]
+[parameters: {'task_id': 'extract_data', 'dag_id': 'etl_news_pipeline', 'run_id': 'scheduled__2023-05-13T00:00:00+00:00', 'map_index': -1, 'start_date': datetime.datetime(2023, 5, 14, 23, 9, 18, 396074, tzinfo=Timezone('UTC')), 'end_date': datetime.datetime(2023, 5, 14, 23, 11, 50, 834014, tzinfo=Timezone('UTC')), 'duration': 152}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj); 4425)
+[2023-05-15T01:11:50.964+0200] {process_utils.py:79} INFO - Process psutil.Process(pid=4450, status='terminated', started='01:09:18') (4450) terminated with exit code None
+[2023-05-15T01:11:50.967+0200] {process_utils.py:79} INFO - Process psutil.Process(pid=4425, status='terminated', exitcode=1, started='01:09:18') (4425) terminated with exit code 1
+[2023-05-15T01:14:22.958+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T01:14:22.969+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T01:14:22.970+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T01:14:22.987+0200] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T01:14:23.008+0200] {standard_task_runner.py:57} INFO - Started process 4788 to run task
+[2023-05-15T01:14:23.019+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1433', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmplbpft6t4']
+[2023-05-15T01:14:23.023+0200] {standard_task_runner.py:85} INFO - Job 1433: Subtask extract_data
+[2023-05-15T01:14:23.095+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T01:14:23.182+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T01:16:59.333+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T01:16:59.340+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T01:16:59.341+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T01:16:59.352+0200] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T01:16:59.373+0200] {standard_task_runner.py:57} INFO - Started process 5096 to run task
+[2023-05-15T01:16:59.384+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1437', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmpz0lqvh7a']
+[2023-05-15T01:16:59.390+0200] {standard_task_runner.py:85} INFO - Job 1437: Subtask extract_data
+[2023-05-15T01:16:59.464+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T01:16:59.544+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T01:18:55.216+0200] {local_task_job_runner.py:298} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2023-05-15T01:18:55.224+0200] {process_utils.py:131} INFO - Sending 15 to group 5096. PIDs of all processes in the group: [5096]
+[2023-05-15T01:18:55.225+0200] {process_utils.py:86} INFO - Sending the signal 15 to group 5096
+[2023-05-15T01:20:04.859+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T01:20:04.866+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T01:20:04.867+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T01:20:04.875+0200] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T01:20:04.948+0200] {standard_task_runner.py:57} INFO - Started process 5397 to run task
+[2023-05-15T01:20:04.982+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1440', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmphuikq869']
+[2023-05-15T01:20:04.992+0200] {standard_task_runner.py:85} INFO - Job 1440: Subtask extract_data
+[2023-05-15T01:20:05.235+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T01:20:05.312+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T01:42:19.094+0200] {local_task_job_runner.py:298} WARNING - State of this instance has been externally set to removed. Terminating instance.
+[2023-05-15T01:42:19.161+0200] {process_utils.py:131} INFO - Sending 15 to group 5397. PIDs of all processes in the group: [5397]
+[2023-05-15T01:42:19.162+0200] {process_utils.py:86} INFO - Sending the signal 15 to group 5397
+[2023-05-15T02:23:11.309+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T02:23:11.315+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T02:23:11.316+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T02:23:11.326+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T02:23:11.351+0200] {standard_task_runner.py:57} INFO - Started process 2209 to run task
+[2023-05-15T02:23:11.363+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1493', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmp2jnh124e']
+[2023-05-15T02:23:11.367+0200] {standard_task_runner.py:85} INFO - Job 1493: Subtask extract_data
+[2023-05-15T02:23:11.424+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T02:23:11.495+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T02:23:11.499+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T02:23:11.501+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py']
+[2023-05-15T02:23:11.530+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T02:23:14.070+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-15T02:23:14.105+0200] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230515T002311, end_date=20230515T002314
+[2023-05-15T02:23:14.156+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-15T02:23:14.178+0200] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T02:27:37.540+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T02:27:37.546+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T02:27:37.547+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T02:27:37.559+0200] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T02:27:37.588+0200] {standard_task_runner.py:57} INFO - Started process 2493 to run task
+[2023-05-15T02:27:37.596+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1503', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmp78mxpux9']
+[2023-05-15T02:27:37.598+0200] {standard_task_runner.py:85} INFO - Job 1503: Subtask extract_data
+[2023-05-15T02:27:37.658+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T02:27:37.725+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T02:42:35.082+0200] {process_utils.py:131} INFO - Sending 15 to group 2493. PIDs of all processes in the group: [2493]
+[2023-05-15T02:42:35.094+0200] {process_utils.py:86} INFO - Sending the signal 15 to group 2493
+[2023-05-15T02:43:55.389+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T02:43:55.399+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T02:43:55.400+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T02:43:55.412+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T02:43:55.475+0200] {standard_task_runner.py:57} INFO - Started process 4396 to run task
+[2023-05-15T02:43:55.489+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1508', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmpmab4s0k_']
+[2023-05-15T02:43:55.494+0200] {standard_task_runner.py:85} INFO - Job 1508: Subtask extract_data
+[2023-05-15T02:47:01.926+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T02:47:01.934+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T02:47:01.935+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T02:47:01.945+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T02:47:01.983+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1514', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmp4safqp3r']
+[2023-05-15T02:47:01.986+0200] {standard_task_runner.py:85} INFO - Job 1514: Subtask extract_data
+[2023-05-15T02:47:02.044+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T02:47:01.975+0200] {standard_task_runner.py:57} INFO - Started process 4658 to run task
+[2023-05-15T02:47:02.116+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T02:47:02.118+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T02:47:02.118+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', <function extract_data at 0x1159bc860>]
+[2023-05-15T02:47:02.119+0200] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/niyantmehta/opt/anaconda3/envs/finalvenv/lib/python3.11/site-packages/airflow/operators/bash.py", line 201, in execute
+    result = self.subprocess_hook.run_command(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niyantmehta/opt/anaconda3/envs/finalvenv/lib/python3.11/site-packages/airflow/hooks/subprocess.py", line 77, in run_command
+    self.sub_process = Popen(
+                       ^^^^^^
+  File "/Users/niyantmehta/opt/anaconda3/envs/finalvenv/lib/python3.11/subprocess.py", line 1024, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Users/niyantmehta/opt/anaconda3/envs/finalvenv/lib/python3.11/subprocess.py", line 1850, in _execute_child
+    self.pid = _fork_exec(
+               ^^^^^^^^^^^
+TypeError: expected str, bytes or os.PathLike object, not function
+[2023-05-15T02:47:02.130+0200] {taskinstance.py:1368} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230515T004701, end_date=20230515T004702
+[2023-05-15T02:47:02.138+0200] {standard_task_runner.py:104} ERROR - Failed to execute job 1514 for task extract_data (expected str, bytes or os.PathLike object, not function; 4658)
+[2023-05-15T02:47:02.174+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 1
+[2023-05-15T02:47:02.210+0200] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T02:48:39.622+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T02:48:39.640+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T02:48:39.641+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T02:48:39.655+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T02:48:39.703+0200] {standard_task_runner.py:57} INFO - Started process 4807 to run task
+[2023-05-15T02:48:39.713+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1519', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmpv6vvt22h']
+[2023-05-15T02:48:39.717+0200] {standard_task_runner.py:85} INFO - Job 1519: Subtask extract_data
+[2023-05-15T02:53:25.509+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T02:53:25.616+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T02:53:25.618+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T02:53:25.677+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T02:53:25.709+0200] {standard_task_runner.py:57} INFO - Started process 5172 to run task
+[2023-05-15T02:53:25.721+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1527', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmp15tam773']
+[2023-05-15T02:53:25.725+0200] {standard_task_runner.py:85} INFO - Job 1527: Subtask extract_data
+[2023-05-15T02:53:25.801+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T02:53:25.891+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T02:53:25.893+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T02:53:25.894+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python -c extract_data']
+[2023-05-15T02:53:25.918+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T02:53:25.968+0200] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2023-05-15T02:53:25.969+0200] {subprocess.py:93} INFO -   File "<string>", line 1, in <module>
+[2023-05-15T02:53:25.970+0200] {subprocess.py:93} INFO - NameError: name 'extract_data' is not defined
+[2023-05-15T02:53:25.973+0200] {subprocess.py:97} INFO - Command exited with return code 1
+[2023-05-15T02:53:25.991+0200] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/niyantmehta/opt/anaconda3/envs/finalvenv/lib/python3.11/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2023-05-15T02:53:25.998+0200] {taskinstance.py:1368} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230515T005325, end_date=20230515T005325
+[2023-05-15T02:53:26.012+0200] {standard_task_runner.py:104} ERROR - Failed to execute job 1527 for task extract_data (Bash command failed. The command returned a non-zero exit code 1.; 5172)
+[2023-05-15T02:53:26.057+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 1
+[2023-05-15T02:53:26.096+0200] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T02:57:22.484+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T02:57:22.494+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T02:57:22.494+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T02:57:22.513+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T02:57:22.556+0200] {standard_task_runner.py:57} INFO - Started process 5454 to run task
+[2023-05-15T02:57:22.579+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1538', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmpvz3u7blv']
+[2023-05-15T02:57:22.584+0200] {standard_task_runner.py:85} INFO - Job 1538: Subtask extract_data
+[2023-05-15T02:57:22.645+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T02:57:22.748+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T02:57:22.750+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T02:57:22.751+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py extract_data']
+[2023-05-15T02:57:22.776+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T02:57:31.681+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-15T02:57:31.712+0200] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230515T005722, end_date=20230515T005731
+[2023-05-15T02:57:31.768+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-15T02:57:31.791+0200] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T03:04:48.714+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T03:04:48.723+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T03:04:48.723+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T03:04:48.738+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T03:04:48.784+0200] {standard_task_runner.py:57} INFO - Started process 5772 to run task
+[2023-05-15T03:04:48.795+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1545', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmppjmafy86']
+[2023-05-15T03:04:48.800+0200] {standard_task_runner.py:85} INFO - Job 1545: Subtask extract_data
+[2023-05-15T03:04:48.882+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T03:04:49.160+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T03:04:49.161+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T03:04:49.161+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py get_data']
+[2023-05-15T03:04:49.179+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T03:04:56.930+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-15T03:04:56.963+0200] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230515T010448, end_date=20230515T010456
+[2023-05-15T03:04:57.016+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-15T03:04:57.038+0200] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T03:16:58.996+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T03:16:59.006+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T03:16:59.007+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T03:16:59.018+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T03:16:59.045+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1554', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmp0o1lqmil']
+[2023-05-15T03:16:59.048+0200] {standard_task_runner.py:85} INFO - Job 1554: Subtask extract_data
+[2023-05-15T03:16:59.052+0200] {standard_task_runner.py:57} INFO - Started process 6255 to run task
+[2023-05-15T03:16:59.110+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T03:16:59.206+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T03:16:59.207+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T03:16:59.208+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py extract_data']
+[2023-05-15T03:16:59.237+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T03:25:58.358+0200] {subprocess.py:93} INFO -                  Date  ...                                            Summary
+[2023-05-15T03:25:58.383+0200] {subprocess.py:93} INFO - 0 2023-05-15 01:18:10  ...  Isaac River coalmine project met the standards...
+[2023-05-15T03:25:58.384+0200] {subprocess.py:93} INFO - 
+[2023-05-15T03:25:58.385+0200] {subprocess.py:93} INFO - [1 rows x 5 columns]
+[2023-05-15T03:26:00.114+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-15T03:26:00.229+0200] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230515T011658, end_date=20230515T012600
+[2023-05-15T03:26:00.312+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-15T03:26:00.393+0200] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T03:29:29.061+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T03:29:29.075+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T03:29:29.076+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T03:29:29.155+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T03:29:29.217+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1565', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmp6azh8h9o']
+[2023-05-15T03:29:29.220+0200] {standard_task_runner.py:85} INFO - Job 1565: Subtask extract_data
+[2023-05-15T03:29:29.211+0200] {standard_task_runner.py:57} INFO - Started process 8163 to run task
+[2023-05-15T03:29:29.282+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T03:29:29.862+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T03:29:29.864+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T03:29:29.865+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py extract_data']
+[2023-05-15T03:29:29.880+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T03:35:26.629+0200] {subprocess.py:93} INFO -                  Date  ...                                            Summary
+[2023-05-15T03:35:26.655+0200] {subprocess.py:93} INFO - 0 2023-05-15 01:29:31  ...  Newly approved coalmine is a ‘small project’ p...
+[2023-05-15T03:35:26.656+0200] {subprocess.py:93} INFO - 
+[2023-05-15T03:35:26.657+0200] {subprocess.py:93} INFO - [1 rows x 5 columns]
+[2023-05-15T03:35:27.723+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-15T03:35:27.853+0200] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230515T012929, end_date=20230515T013527
+[2023-05-15T03:35:27.901+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-15T03:35:28.011+0200] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T03:39:29.761+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T03:39:29.772+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T03:39:29.773+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T03:39:29.794+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T03:39:29.809+0200] {standard_task_runner.py:57} INFO - Started process 9109 to run task
+[2023-05-15T03:39:29.813+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1571', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmpywncwz01']
+[2023-05-15T03:39:29.815+0200] {standard_task_runner.py:85} INFO - Job 1571: Subtask extract_data
+[2023-05-15T03:39:29.870+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T03:39:30.401+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T03:39:30.405+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T03:39:30.406+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py extract_data']
+[2023-05-15T03:39:30.423+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T03:44:48.936+0200] {subprocess.py:93} INFO -                  Date  ...                                            Summary
+[2023-05-15T03:44:48.963+0200] {subprocess.py:93} INFO - 0 2023-05-15 01:35:00  ...  Newly approved coalmine is a ‘small project’ p...
+[2023-05-15T03:44:48.966+0200] {subprocess.py:93} INFO - 
+[2023-05-15T03:44:48.967+0200] {subprocess.py:93} INFO - [1 rows x 5 columns]
+[2023-05-15T03:44:50.532+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-15T03:44:50.648+0200] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230515T013929, end_date=20230515T014450
+[2023-05-15T03:44:50.713+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-15T03:44:50.834+0200] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T03:47:40.977+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T03:47:40.985+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T03:47:40.985+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T03:47:41.000+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T03:47:41.016+0200] {standard_task_runner.py:57} INFO - Started process 10038 to run task
+[2023-05-15T03:47:41.024+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1580', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmpbrpnya_s']
+[2023-05-15T03:47:41.027+0200] {standard_task_runner.py:85} INFO - Job 1580: Subtask extract_data
+[2023-05-15T03:47:41.083+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T03:47:41.605+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T03:47:41.611+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T03:47:41.611+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py extract_data']
+[2023-05-15T03:47:41.626+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T03:56:45.035+0200] {subprocess.py:93} INFO -                  Date  ...                                            Summary
+[2023-05-15T03:56:45.065+0200] {subprocess.py:93} INFO - 0 2023-05-15 01:47:52  ...  Turkish president Recep Tayyip Erdoan has just...
+[2023-05-15T03:56:45.067+0200] {subprocess.py:93} INFO - 
+[2023-05-15T03:56:45.068+0200] {subprocess.py:93} INFO - [1 rows x 5 columns]
+[2023-05-15T03:56:46.729+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-15T03:56:46.853+0200] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230515T014740, end_date=20230515T015646
+[2023-05-15T03:56:46.903+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-15T03:56:47.015+0200] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T04:22:11.619+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T04:22:11.627+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T04:22:11.627+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T04:22:11.639+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T04:22:11.656+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1595', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmprlwf0l5h']
+[2023-05-15T04:22:11.659+0200] {standard_task_runner.py:85} INFO - Job 1595: Subtask extract_data
+[2023-05-15T04:22:11.651+0200] {standard_task_runner.py:57} INFO - Started process 14140 to run task
+[2023-05-15T04:22:11.714+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T04:22:12.106+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T04:22:12.108+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T04:22:12.109+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py extract_data']
+[2023-05-15T04:22:12.126+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T04:28:44.620+0200] {subprocess.py:93} INFO -                  Date  ...                                            Summary
+[2023-05-15T04:28:44.647+0200] {subprocess.py:93} INFO - 0 2023-05-15 02:19:02  ...  NAB predicts further RBA cash rate hike by Jul...
+[2023-05-15T04:28:44.649+0200] {subprocess.py:93} INFO - 
+[2023-05-15T04:28:44.651+0200] {subprocess.py:93} INFO - [1 rows x 5 columns]
+[2023-05-15T04:28:46.100+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-15T04:28:46.206+0200] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230515T022211, end_date=20230515T022846
+[2023-05-15T04:28:46.264+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-15T04:28:46.368+0200] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T07:31:37.371+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T07:31:37.381+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T07:31:37.381+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T07:31:37.390+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T07:31:37.410+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1620', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmp15wng9mx']
+[2023-05-15T07:31:37.413+0200] {standard_task_runner.py:85} INFO - Job 1620: Subtask extract_data
+[2023-05-15T07:31:37.404+0200] {standard_task_runner.py:57} INFO - Started process 18450 to run task
+[2023-05-15T07:31:37.471+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T07:31:38.064+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T07:31:38.065+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T07:31:38.066+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py extract_data']
+[2023-05-15T07:31:38.107+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T07:37:45.967+0200] {subprocess.py:93} INFO -                  Date  ...                                            Summary
+[2023-05-15T07:37:45.998+0200] {subprocess.py:93} INFO - 0 2023-05-15 05:27:35  ...  PwC Australia has announced Ziggy Switkowski w...
+[2023-05-15T07:37:45.999+0200] {subprocess.py:93} INFO - 
+[2023-05-15T07:37:45.999+0200] {subprocess.py:93} INFO - [1 rows x 5 columns]
+[2023-05-15T07:37:47.301+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-15T07:37:47.433+0200] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230515T053137, end_date=20230515T053747
+[2023-05-15T07:37:47.504+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-15T07:37:47.614+0200] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-15T08:33:33.639+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T08:33:33.649+0200] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-15T08:33:33.650+0200] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-15T08:33:33.663+0200] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): extract_data> on 2023-05-13 00:00:00+00:00
+[2023-05-15T08:33:33.680+0200] {standard_task_runner.py:57} INFO - Started process 24244 to run task
+[2023-05-15T08:33:33.688+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_news_pipeline', 'extract_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '1646', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T/tmpp9w2_cw3']
+[2023-05-15T08:33:33.691+0200] {standard_task_runner.py:85} INFO - Job 1646: Subtask extract_data
+[2023-05-15T08:33:33.766+0200] {task_command.py:410} INFO - Running <TaskInstance: etl_news_pipeline.extract_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host niyants-mbp.fritz.box
+[2023-05-15T08:33:34.558+0200] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_news_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-15T08:33:34.560+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /var/folders/qv/qkzfd8cs7hdftb0synd9cw3h0000gn/T
+[2023-05-15T08:33:34.561+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py extract_data']
+[2023-05-15T08:33:34.578+0200] {subprocess.py:86} INFO - Output:
+[2023-05-15T08:40:03.343+0200] {subprocess.py:93} INFO -                  Date  ...                                            Summary
+[2023-05-15T08:40:03.373+0200] {subprocess.py:93} INFO - 0 2023-05-15 06:24:56  ...  Volodymyr Zelenskiy will arrive in London on M...
+[2023-05-15T08:40:03.375+0200] {subprocess.py:93} INFO - 
+[2023-05-15T08:40:03.376+0200] {subprocess.py:93} INFO - [1 rows x 5 columns]
+[2023-05-15T08:40:04.953+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-15T08:40:05.129+0200] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=etl_news_pipeline, task_id=extract_data, execution_date=20230513T000000, start_date=20230515T063333, end_date=20230515T064005
+[2023-05-15T08:40:05.190+0200] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-15T08:40:05.343+0200] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
