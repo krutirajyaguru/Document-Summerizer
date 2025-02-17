@@ -6,7 +6,7 @@ def task_data_upload(data):
   print(data.head() )
   
   #data = data.to_csv(index=None, header=None)
-  file_path = '/Users/niyantmehta/Spiced/ETL_Pipeline/airflow/data.csv'  # Specify the desired file path
+  file_path = '/Users/ETL_Pipeline/airflow/data.csv'  # Specify the desired file path
   #data.to_csv(file_path, index=None)
   data.to_csv(file_path,index=None,header=None,sep ='\t')#header=None,
   
