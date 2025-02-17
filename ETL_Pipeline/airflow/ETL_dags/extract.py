@@ -11,9 +11,9 @@ import sys
 
 def extract_data():
     # Load the tokenizer
-    tokenizer = AutoTokenizer.from_pretrained("/Users/niyantmehta/Spiced/final/tokenizer")
+    tokenizer = AutoTokenizer.from_pretrained("/Users/final/tokenizer")
     gen_kwargs = {"length_penalty": 0.8, "num_beams":8, "max_length": 128}
-    pipe = pipeline("summarization", model="/Users/niyantmehta/Spiced/final/pegasus-cnn-model", tokenizer=tokenizer)
+    pipe = pipeline("summarization", model="/Users/final/pegasus-cnn-model", tokenizer=tokenizer)
 
     url = 'https://content.guardianapis.com/search?'
 
@@ -24,7 +24,7 @@ def extract_data():
         #try:
     # Create request parameters
     params = {
-        'api-key': 'eedb86d3-6032-4525-8b4b-9f1da086f675',
+        'api-key': '',
         'q' : 'news',
         'order-by': 'newest',
         'page-size': 1
