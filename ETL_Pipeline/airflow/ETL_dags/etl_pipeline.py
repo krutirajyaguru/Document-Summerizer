@@ -11,7 +11,7 @@ import pandas as pd
 from extract import extract_data
 
 def load_data():
-    file_path='/Users/niyantmehta/Spiced/ETL_Pipeline/airflow/data.csv'
+    file_path='/Users/ETL_Pipeline/airflow/data.csv'
     postgres_hook = PostgresHook(postgres_conn_id='postgres_connection')
     # Insert the DataFrame into the PostgreSQL database
     postgres_hook.bulk_load('news_etl', file_path)
@@ -44,7 +44,7 @@ with DAG(
 
   extract = BashOperator(
     task_id = 'extract_data',
-    bash_command= 'python /Users/niyantmehta/Spiced/ETL_Pipeline/airflow/ETL_dags/extract.py extract_data'
+    bash_command= 'python /Users/ETL_Pipeline/airflow/ETL_dags/extract.py extract_data'
   )
 
   transform = PythonOperator(
