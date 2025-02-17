@@ -6,9 +6,9 @@ import psycopg2
 
 pattern = re.compile('<.*?>')
 
-tokenizer = AutoTokenizer.from_pretrained("/Users/niyantmehta/Spiced/final/tokenizer")
+tokenizer = AutoTokenizer.from_pretrained("/Users/final/tokenizer")
 gen_kwargs = {"length_penalty": 0.8, "num_beams":8, "max_length": 128}
-pipe = pipeline("summarization", model="/Users/niyantmehta/Spiced/final/pegasus-cnn-model",tokenizer=tokenizer)
+pipe = pipeline("summarization", model="/Users/final/pegasus-cnn-model",tokenizer=tokenizer)
 
 @st.cache_data
 def summarizer_model(val):
