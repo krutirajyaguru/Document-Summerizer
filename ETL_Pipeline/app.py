@@ -19,8 +19,8 @@ def summarizer_model(val):
 def init_connection():
 	host="localhost"
 	database="news"
-	user="postgres"
-	password="postgres"
+	user=""
+	password=""
 	return psycopg2.connect(host=host, database=database, user=user, password=password)
 
 @st.cache_data
@@ -141,7 +141,7 @@ elif 'Upload a file' in status:
 elif btn:
 	st.title("📰 NEWS")
 	# Establish a connection to the database
-	conn = psycopg2.connect(host='localhost', database='news', user='postgres', password='postgres')
+	conn = psycopg2.connect(host='localhost', database='news', user=user, password=password)
 	#query=''
 	for i in range(len(category)):
 	# Execute the SQL query
