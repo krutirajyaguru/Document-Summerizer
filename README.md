@@ -8,13 +8,13 @@ A document summarizer that provides both real-time news summaries and personaliz
 - Streamlit for the user interface.
 
 
-Document Summarizer![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.001.png)![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.002.png)
+Document Summarizer![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.001.png)![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.002.png)
 
 A report by Kruti
 
 ![ref1]
 
-- Introduction![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.004.png)
+- Introduction![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.004.png)
 - Text Summarization
 - Model
 - ETL Pipeline
@@ -36,17 +36,17 @@ Introduction![ref2]
 
 What is Text Summarization?![ref3]
 
-Text  Summarization  is  the  process  of  ![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.007.png)shortening  a  set  of  data  computationally,  to  create  a  subset  that  represents  the  most  important  or  relevant  information  within  the  original content. 
+Text  Summarization  is  the  process  of  ![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.007.png)shortening  a  set  of  data  computationally,  to  create  a  subset  that  represents  the  most  important  or  relevant  information  within  the  original content. 
 
-Types of Summarization![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.008.png)
+Types of Summarization![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.008.png)
 
-` `![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.009.png)![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.010.png)
+` `![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.009.png)![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.010.png)
 
 Extractive Text Summarization  Abstractive Text Summarization  
 
 Traditional  method  summary  Advanced  method  summary,  are contains  exact  sentences  from  the  generated  by  the  model,  not  just original text data.  extracted from the original text data
 
-Pegasus![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.011.png)
+Pegasus![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.011.png)
 
 - Pegasus is a pre trained transformer-based  ![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.012.jpeg)model.  
 - Specializing in abstractive text summarization  tasks. Generate summaries that capture the  main ideas and key details of the input text.  
@@ -56,9 +56,9 @@ Pegasus![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.011.png)
 
 ![ref1]
 
-ETL Pipeline![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.013.png)
+ETL Pipeline![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.013.png)
 
-**E**xtract ![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.014.jpeg)**T**ransform **L**oad 
+**E**xtract ![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.014.jpeg)**T**ransform **L**oad 
 
 Airflow![ref3]
 
@@ -68,12 +68,12 @@ A DAG (Directed Acyclic Graph) is a way to represent the flow of tasks. Think of
 
 ![ref1]
 
-Airflow![ref2]![ref1]![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.015.jpeg)
+Airflow![ref2]![ref1]![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.015.jpeg)
 
 
-Postgres Table![ref3]![ref1]![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.016.jpeg)![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.017.png)
+Postgres Table![ref3]![ref1]![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.016.jpeg)![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.017.png)
 
-Demo![ref2]![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.018.jpeg)![ref1]
+Demo![ref2]![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.018.jpeg)![ref1]
 
 Future Expansion![ref2]
 
@@ -86,9 +86,9 @@ Future Expansion![ref2]
 
 ![ref1]
 
-Thank You![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.019.png)![ref1]
+Thank You![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.019.png)![ref1]
 
 
-[ref1]: Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.003.png
-[ref2]: Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.005.png
-[ref3]: Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.006.png
+[ref1]: Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.003.png
+[ref2]: Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.005.png
+[ref3]: Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.006.png
