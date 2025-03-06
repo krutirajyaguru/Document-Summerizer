@@ -23,6 +23,8 @@ What is Text Summarization?![ref3]
 
 Text  Summarization  is  the  process  of  shortening  a  set  of  data  computationally,  to  create  a  subset  that  represents  the  most  important  or  relevant  information  within  the  original content. 
 
+![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.007.png)
+
 Types of Summarization![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.008.png)
 
 ` `![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.009.png)![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.010.png)
