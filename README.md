@@ -27,7 +27,7 @@ Text  Summarization  is  the  process  of  shortening  a  set  of  data  computa
        ![](Images/Types_of_Summerization.jpeg)
 
 # Pegasus
-  ![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.011.png)
+  ![](Images/Pegasus.jpeg)
 
 - Pegasus is a pre trained transformer-based  ![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.012.jpeg)model.  
 - Specializing in abstractive text summarization  tasks. Generate summaries that capture the  main ideas and key details of the input text.  
