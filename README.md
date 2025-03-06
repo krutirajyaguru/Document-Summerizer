@@ -46,10 +46,12 @@ Text  Summarization  is  the  process  of  shortening  a  set  of  data  computa
 
 
 # Postgres Table
+  ![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.016.png)
+  
   ![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.017.png)
 
 # Demo
-  ![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.018.jpeg)![ref1]
+  ![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.018.jpeg)
 
 # Future Expansion
 
