@@ -46,9 +46,9 @@ Text  Summarization  is  the  process  of  shortening  a  set  of  data  computa
 
 
 # Postgres Table
-  ![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.016.png)
+  ![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.016.png)
   
-  ![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.017.png)
+  ![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.017.png)
 
 # Demo
   ![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.018.jpeg)
@@ -60,7 +60,7 @@ Text  Summarization  is  the  process  of  shortening  a  set  of  data  computa
   - Audio and Video Summarization.
     - Extend the system to support summarization of audio and video content.
   - Sentiment analysis:
-  - To enhance the summarization process and provide additional insights about the content.
+    - To enhance the summarization process and provide additional insights about the content.
 
 
 
