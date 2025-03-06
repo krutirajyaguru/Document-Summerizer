@@ -24,7 +24,7 @@ Document Summarizer
 Text  Summarization  is  the  process  of  shortening  a  set  of  data  computationally,  to  create  a  subset  that  represents  the  most  important  or  relevant  information  within  the  original content. 
 
   *  Types of Summarization
-       ![](Images/Types of Summerization.jpeg)
+       ![](Images/Types_of_Summerization.jpeg)
      
       - Extractive Text Summarization:
           - Tradi t ional method summary contains exact sentences from the original text data.
