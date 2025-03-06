@@ -36,7 +36,7 @@ Text  Summarization  is  the  process  of  shortening  a  set  of  data  computa
 - Save: save the model locally. 
 
 # ETL Pipeline
-  ![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.014.jpeg)**T**ransform **L**oad 
+  ![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.014.jpeg)
 
 # Airflow
   ![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.015.jpeg)
@@ -45,20 +45,22 @@ Text  Summarization  is  the  process  of  shortening  a  set  of  data  computa
   - A DAG (Directed Acyclic Graph) is a way to represent the flow of tasks. Think of it like a flowchart, where tasks are represented as boxes, and arrows show the order in which they should be executed.
 
 
-Postgres Table![ref3]![ref1]![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.016.jpeg)![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.017.png)
+# Postgres Table
+  ![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.017.png)
 
-Demo![ref2]![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.018.jpeg)![ref1]
+# Demo
+  ![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.018.jpeg)![ref1]
 
-Future Expansion![ref2]
+# Future Expansion
 
-- Multilingual Support: 
-  - Extend the system to provide summaries and news in multiple languages. 
-- Audio and Video Summarization.
-  - Extend the system to support summarization of audio and video content.
-- Sentiment analysis:
-- To enhance the summarization process and provide additional insights about the content.
+  - Multilingual Support: 
+    - Extend the system to provide summaries and news in multiple languages. 
+  - Audio and Video Summarization.
+    - Extend the system to support summarization of audio and video content.
+  - Sentiment analysis:
+  - To enhance the summarization process and provide additional insights about the content.
 
-![ref1]
+
 
 Thank You![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.019.png)![ref1]
 
