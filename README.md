@@ -27,7 +27,8 @@ Text  Summarization  is  the  process  of  shortening  a  set  of  data  computa
 # Pegasus
   ![](Images/Pegasus.jpeg)
 
-- Pegasus is a pre trained transformer-based  ![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.012.jpeg)model.  
+  ![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.012.jpeg)
+- Pegasus is a pre trained transformer-based model.  
 - Specializing in abstractive text summarization  tasks. Generate summaries that capture the  main ideas and key details of the input text.  
 - Dataset: Hugging Face - CNN news mails  
 - Model: Pegasus pretrain model fine tuned it  
