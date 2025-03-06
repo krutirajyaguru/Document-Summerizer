@@ -35,19 +35,14 @@ Text  Summarization  is  the  process  of  shortening  a  set  of  data  computa
 - Model: Pegasus pretrain model fine tuned it  
 - Save: save the model locally. 
 
-ETL Pipeline![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.013.png)
+# ETL Pipeline
+  ![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.014.jpeg)**T**ransform **L**oad 
 
-**E**xtract ![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.014.jpeg)**T**ransform **L**oad 
+# Airflow
+  ![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.015.jpeg)
+  - Airflow is an open-source platform used for orchestrating and scheduling complex workflows and data pipelines. It allows users to define, schedule, and monitor workflows as directed acyclic graphs (DAGs). 
 
-Airflow![ref3]
-
-Airflow is an open-source platform used for orchestrating and scheduling complex workflows and data pipelines. It allows users to define, schedule, and monitor workflows as directed acyclic graphs (DAGs). 
-
-A DAG (Directed Acyclic Graph) is a way to represent the flow of tasks. Think of it like a flowchart, where tasks are represented as boxes, and arrows show the order in which they should be executed.
-
-![ref1]
-
-Airflow![ref2]![ref1]![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.015.jpeg)
+  - A DAG (Directed Acyclic Graph) is a way to represent the flow of tasks. Think of it like a flowchart, where tasks are represented as boxes, and arrows show the order in which they should be executed.
 
 
 Postgres Table![ref3]![ref1]![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.016.jpeg)![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.017.png)
