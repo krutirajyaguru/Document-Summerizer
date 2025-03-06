@@ -8,31 +8,16 @@ A document summarizer that provides both real-time news summaries and personaliz
 - Streamlit for the user interface.
 
 
-Document Summarizer![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.001.png)![](Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.002.png)
+Document Summarizer
 
-A report by Kruti
-
-![ref1]
-
-- Introduction![](Images/Aspose.Words.2c2667e0-6c38-4f40-b43f-ed657d0c968b.004.png)
-- Text Summarization
-- Model
-- ETL Pipeline
-
-Agenda ● Demo
-
-- Future Expansion
-- Q&A 
-
-Introduction![ref2]
+# Introduction
 
 - Train model.
 - ETL Pipeline.
 - Streamlit app:
-- Get real time summary of texts and docs. 
-- Get latest News summary of your choice.
+  - Get real time summary of texts and docs. 
+  - Get latest News summary of your choice.
 
-![ref1]
 
 What is Text Summarization?![ref3]
 
